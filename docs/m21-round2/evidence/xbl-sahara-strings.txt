@@ -1,0 +1,46 @@
+# FiiO M21 FW1.0.8 xbl.img — Sahara/EDL strings (strings -n 6 | grep)
+# 2026-10-30, HX90
+EDL: sbl1_dload_entry: dload_entry_count > 1
+Exception caught by SBL1 vector table!!
+Sahara: Hello pkt sent
+Sahara: Hello Response Received
+Sahara: Reset request received
+sbl1_appsbl_arch_determination
+SBL1 BUILD @ 17:01:00 on Oct 21 2025
+sbl1_config.c
+sbl1_ddr_init
+sbl1_ddr_set_default_params
+sbl1_ddr_set_params
+SBL1, Delta
+sbl1_do_ddr_training
+sbl1_efs_handle_cookies
+SBL1, End
+sbl1_feature_config_init
+sbl1_hand_control_to_devprog_ddr_or_ddi
+sbl1_hw.c
+sbl1_hw_dload_init
+sbl1_hw_init
+sbl1_hw_init_secondary
+sbl1_hw_platform_pre_ddr
+sbl1_hw_platform_smem
+sbl1_hw_play_vibr
+sbl1_hw_pre_ddr_init
+sbl1_load_ddr_training_data
+sbl1_mc.c
+sbl1_pm_aop_pre_init_wrapper
+sbl1_post_ddr_init
+sbl1_sahara.c
+sbl1_save_ddr_training_data
+SBL1, Start (MPM timestamp = %d)
+sbl1_target.c
+sbl1_tlmm_init
+sbl1_xblconfig_init
+*XBLLoader*boot_images/Build/DivarLAA/Dll/RELEASE/XBLLoader.dll
+
+# count of fastboot/unlock/AVB keyword hits in xbl.img (raw byte scan):
+fastboot 0
+unlock 0
+AVB 0
+verified 0
+orange 0
+partition 21

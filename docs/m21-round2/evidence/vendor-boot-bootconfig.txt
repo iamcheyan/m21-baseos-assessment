@@ -1,0 +1,5 @@
+androidboot.hardware=qcom
+androidboot.memcg=1
+androidboot.load_modules_parallel=true
+androidboot.usbcontroller=4e00000.dwc3
+androidboot.qhardware=SC200VWF

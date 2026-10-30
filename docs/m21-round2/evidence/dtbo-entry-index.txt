@@ -1,0 +1,43 @@
+DTBO version=0 total=2771658 entries=42
+  [ 0] id=0 rev=0 size=35406   roots=fiio,dac-core,gpio-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,khaje-atp qcom,khaje qcom
+  [ 1] id=0 rev=0 size=96148   roots=fiio,dac-core,focaltech,fts,gpio-keys,novatek,NVT-ts,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,q
+  [ 2] id=0 rev=0 size=27023   roots=fiio,dac-core,gpio-keys,headset-adc-keys,qcom,audio-ref-clk,qcom,bolero-clk-rsc-mngr,qcom,khaje-idp qcom,khaje
+  [ 3] id=0 rev=0 size=70236   roots=fiio,dac-core,gpio-keys,headset-adc-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,i2c-pmic
+  [ 4] id=0 rev=0 size=135082  roots=fiio,dac-core,focaltech,fts,gpio-keys,headset-adc-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr
+  [ 5] id=0 rev=0 size=133265  roots=fiio,dac-core,focaltech,fts,gpio-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,dsi-ctrl-hw
+  [ 6] id=0 rev=0 size=28417   roots=fiio,dac-core,gpio-keys,qcom,audio-ref-clk,qcom,bolero-clk-rsc-mngr,qcom,khaje-qrd qcom,khaje qcom,qrd,qcom,ms
+  [ 7] id=0 rev=0 size=88962   roots=fiio,dac-core,focaltech,fts,gpio-keys,qcom,audio-ref-clk,qcom,bolero-clk-rsc-mngr,qcom,dsi-ctrl-hw-v2.4,qcom,d
+  [ 8] id=0 rev=0 size=72530   roots=fiio,dac-core,gpio-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,i2c-pmic,qcom,khaje-qrd q
+  [ 9] id=0 rev=0 size=133042  roots=fiio,dac-core,focaltech,fts,gpio-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,dsi-ctrl-hw
+  [10] id=0 rev=0 size=132947  roots=fiio,dac-core,focaltech,fts,gpio-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,dsi-ctrl-hw
+  [11] id=0 rev=0 size=22061   roots=gpio-keys,qcom,bcl-v5,qcom,khajeg-atp qcom,khajeg qcom,atp,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qcom,pm7250b-qg,
+  [12] id=0 rev=0 size=37645   roots=awinic,aw35615,cellwise,cw221X,cirrus,cs43198,fairchild,fusb302,fiio,anolog_board,fiio,config,fiio,external_ke
+  [13] id=0 rev=0 size=134786  roots=fiio,dac-core,focaltech,fts,gpio-keys,headset-adc-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr
+  [14] id=0 rev=0 size=13667   roots=gpio-keys,headset-adc-keys,qcom,khajeg-idp qcom,khajeg qcom,idp,qcom,pm8010-regulator,qcom,ufs-phy-qmp-v4-khaj
+  [15] id=0 rev=0 size=56917   roots=gpio-keys,headset-adc-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajeg-idp qcom,khajeg qcom,idp,qcom,msm-bcl-soc,qco
+  [16] id=0 rev=0 size=135078  roots=fiio,dac-core,focaltech,fts,gpio-keys,headset-adc-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr
+  [17] id=0 rev=0 size=133209  roots=fiio,dac-core,focaltech,fts,gpio-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,dsi-ctrl-hw
+  [18] id=0 rev=0 size=28297   roots=fiio,dac-core,gpio-keys,qcom,audio-ref-clk,qcom,bolero-clk-rsc-mngr,qcom,khajeg-qrd qcom,khajeg qcom,qrd,qcom,
+  [19] id=0 rev=0 size=59091   roots=gpio-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajeg-qrd qcom,khajeg qcom,qrd,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qc
+  [20] id=0 rev=0 size=132934  roots=fiio,dac-core,focaltech,fts,gpio-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr,qcom,dsi-ctrl-hw
+  [21] id=0 rev=0 size=22061   roots=gpio-keys,qcom,bcl-v5,qcom,khajep-atp qcom,khajep qcom,atp,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qcom,pm7250b-qg,
+  [22] id=0 rev=0 size=37645   roots=awinic,aw35615,cellwise,cw221X,cirrus,cs43198,fairchild,fusb302,fiio,anolog_board,fiio,config,fiio,external_ke
+  [23] id=0 rev=0 size=56901   roots=gpio-keys,headset-adc-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khaje-idp qcom,khaje qcom,idp,qcom,msm-bcl-soc,qcom,
+  [24] id=0 rev=0 size=13667   roots=gpio-keys,headset-adc-keys,qcom,khajep-idp qcom,khajep qcom,idp,qcom,pm8010-regulator,qcom,ufs-phy-qmp-v4-khaj
+  [25] id=0 rev=0 size=56917   roots=gpio-keys,headset-adc-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajep-idp qcom,khajep qcom,idp,qcom,msm-bcl-soc,qco
+  [26] id=0 rev=0 size=56993   roots=gpio-keys,headset-adc-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajep-idp qcom,khajep qcom,idp,qcom,msm-bcl-soc,qco
+  [27] id=0 rev=0 size=59087   roots=gpio-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajep-qrd qcom,khajep qcom,qrd,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qc
+  [28] id=0 rev=0 size=14570   roots=gpio-keys,qcom,khajep-qrd qcom,khajep qcom,qrd,qcom,ufs-phy-qmp-v4-khaje,regulator-fixed,synaptics,tcm-i2c
+  [29] id=0 rev=0 size=59091   roots=gpio-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajep-qrd qcom,khajep qcom,qrd,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qc
+  [30] id=0 rev=0 size=22061   roots=gpio-keys,qcom,bcl-v5,qcom,khajeq-atp qcom,khajeq qcom,atp,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qcom,pm7250b-qg,
+  [31] id=0 rev=0 size=37645   roots=awinic,aw35615,cellwise,cw221X,cirrus,cs43198,fairchild,fusb302,fiio,anolog_board,fiio,config,fiio,external_ke
+  [32] id=0 rev=0 size=56901   roots=gpio-keys,headset-adc-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khaje-idp qcom,khaje qcom,idp,qcom,msm-bcl-soc,qcom,
+  [33] id=0 rev=0 size=13667   roots=gpio-keys,headset-adc-keys,qcom,khajeq-idp qcom,khajeq qcom,idp,qcom,pm8010-regulator,qcom,ufs-phy-qmp-v4-khaj
+  [34] id=0 rev=0 size=56917   roots=gpio-keys,headset-adc-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajeq-idp qcom,khajeq qcom,idp,qcom,msm-bcl-soc,qco
+  [35] id=0 rev=0 size=56993   roots=gpio-keys,headset-adc-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajeq-idp qcom,khajeq qcom,idp,qcom,msm-bcl-soc,qco
+  [36] id=0 rev=0 size=59087   roots=gpio-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajeq-qrd qcom,khajeq qcom,qrd,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qc
+  [37] id=0 rev=0 size=14570   roots=gpio-keys,qcom,khajeq-qrd qcom,khajeq qcom,qrd,qcom,ufs-phy-qmp-v4-khaje,regulator-fixed,synaptics,tcm-i2c
+  [38] id=0 rev=0 size=59091   roots=gpio-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajeq-qrd qcom,khajeq qcom,qrd,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qc
+  [39] id=0 rev=0 size=58769   roots=gpio-keys,qcom,bcl-v5,qcom,i2c-pmic,qcom,khajeq-qrd qcom,khajeq qcom,qrd,qcom,msm-bcl-soc,qcom,pm7250b-gpio,qc
+  [40] id=0 rev=0 size=115733  roots=awinic,aw35615,cellwise,cw221X,cirrus,cs43198,fairchild,fusb302,fiio,anolog_board,fiio,config,fiio,dac-core,fi
+  [41] id=0 rev=0 size=135173  roots=fiio,dac-core,focaltech,fts,gpio-keys,headset-adc-keys,qcom,audio-ref-clk,qcom,bcl-v5,qcom,bolero-clk-rsc-mngr

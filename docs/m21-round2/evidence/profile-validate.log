@@ -1,0 +1,17 @@
+# 命令：在 rocknix 构建树里的 pocketjs 源码上，用上游 validatePocketProfile 跑 parse_spec.py --emit-pocketjs 导出的 profile
+# 上游源码：build.ROCKNIX-SM8550.aarch64/build/pocketjs-runtime-e6770376626a4de5c93eaa6fb048e7e9ffb81f9f/framework/src/profile.ts
+# 脚本 verify-m21.ts:
+import { validatePocketProfile, hashPocketProfile } from "./framework/src/profile.ts";
+const raw = await Bun.file("./m21-profile.json").json();
+const r = validatePocketProfile(raw);
+if (!r.ok) { console.error(JSON.stringify(r.diagnostics, null, 1)); process.exit(1); }
+console.log("pocketjs validator: OK", hashPocketProfile(r.value));
+
+$ bun verify-m21.ts
+
+pocketjs validator: OK sha256:6ab505178ff09ad5c3f7c70e69bd64ebd3e1dc1b49e4bcaf7c124b73072a57eb
+exit=0
+
+# 边界确认（同一校验器）
+logical 750x1024 => true
+logical 750x1025 => [{"code":"profile.touchViewport","path":"/display/logicalViewports/0","message":"touch coordinates must fit the 10-bit frame encoding"}]

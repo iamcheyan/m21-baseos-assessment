@@ -1,0 +1,17 @@
+# FiiO M21 FW1.0.8 abl.img — embedded X.509 certificates (openssl x509 -inform DER)
+# extracted 2026-10-30 on HX90 from firmware/extracted-boot-components/abl.img
+== /tmp/certs/c0.der
+subject=C=US, ST=California, CN=SecTools Test User, O=SecTools, L=San Diego
+issuer=C=US, ST=CA, L=San Diego, OU=CDMA Technologies, O=QUALCOMM, CN=QUALCOMM Attestation CA
+notBefore=Apr 28 10:07:24 2026 GMT
+notAfter=Apr 23 10:07:24 2046 GMT
+== /tmp/certs/c2.der
+subject=C=US, ST=CA, L=San Diego, OU=CDMA Technologies, O=QUALCOMM, CN=QUALCOMM Attestation CA
+issuer=C=US, ST=California, L=San Diego, OU=General Use Test Key (fortesting 13 only), OU=CDMA Technologies, O=QUALCOMM, CN=QCT Root CA 1
+notBefore=Dec 13 12:39:44 2018 GMT
+notAfter=Dec  8 12:39:44 2038 GMT
+== /tmp/certs/c4.der
+subject=C=US, ST=California, L=San Diego, OU=General Use Test Key (fortesting 13 only), OU=CDMA Technologies, O=QUALCOMM, CN=QCT Root CA 1
+issuer=C=US, ST=California, L=San Diego, OU=General Use Test Key (fortesting 13 only), OU=CDMA Technologies, O=QUALCOMM, CN=QCT Root CA 1
+notBefore=Dec 13 10:41:46 2018 GMT
+notAfter=Dec  8 10:41:46 2038 GMT
