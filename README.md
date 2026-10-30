@@ -2,11 +2,20 @@
 
 调查日期：2026-10-30
 
-## 结论摘要
+> **本文件是第一轮结论（已被第二轮修正）。第二轮以 `docs/m21-round2/` 为准：**
+> 档位从"暂不建议"改为 **有条件可行**——启动链、显示、输入均可用，最大工作量在音频用户态。
+> 差异逐条见 [`docs/m21-round2/DIFF-vs-round1.md`](docs/m21-round2/DIFF-vs-round1.md)，
+> 结论摘要见 [`docs/m21-round2/README.md`](docs/m21-round2/README.md)。
 
-**当前判断：暂不建议将 FiiO M21 直接定为 BaseOS 首个触屏设备。** 它已有可分析的官方 Android 13 OTA：FW1.0.8 包内解析出 19 个分区、A/B OTA metadata 和 AVB 签名描述符，并成功提取 boot、init_boot、vendor_boot、dtbo、vbmeta 等镜像。官方也记录 Fastboot Mode，社区有设备处于 unlocked 状态的个案。但仍没有证据证明该设备支持主机端 `fastboot boot baseos.img`。
+> ⚠ 以下两段与表格为**第一轮原始判断**，括号内为本轮修正。保留原文以便对照。
 
-Linux 侧没有发现 M21 专用 Linux DTS、可直接用的板级驱动集合或 mobile Linux 移植。SM6225 有实验性近主线内核工作，但不能替代 M21 板级支持。屏幕、触摸、四颗 CS43198 DAC 与模拟放大链、无线、电源与充电仍需逐项验证。
+**（第一轮判断）暂不建议将 FiiO M21 直接定为 BaseOS 首个触屏设备。** 它已有可分析的官方 Android 13 OTA：FW1.0.8 包内解析出 19 个分区、A/B OTA metadata 和 AVB 签名描述符，并成功提取 boot、init_boot、vendor_boot、dtbo、vbmeta 等镜像。官方也记录 Fastboot Mode，社区有设备处于 unlocked 状态的个案。但仍没有证据证明该设备支持主机端 `fastboot boot baseos.img`。
+
+> **修正**：`fastboot boot` 已在同 vendor tree、同 SoC、同 kernel vermagic 的 JM21 上实测成功（`docs/m21-round2/boot-chain.md` §4）；"unlocked 个案"经复核来自 JM21 而非 M21（`storage-risk.md` §7）。
+
+（第一轮）Linux 侧没有发现 M21 专用 Linux DTS、可直接用的板级驱动集合或 mobile Linux 移植。SM6225 有实验性近主线内核工作，但不能替代 M21 板级支持。屏幕、触摸、四颗 CS43198 DAC 与模拟放大链、无线、电源与充电仍需逐项验证。
+
+> **修正**：驱动集合**存在**——`vendor_dlkm` 里有 226 个 .ko，含 `msm_drm`、`goodix_gt9xx_ts`、`cs43198`、`machine_dlkm` 等；缺的是加载顺序与用户态栈，不是驱动本身（`kernel.md` §3、`audio.md` §3）。
 
 ## 评分与建议
 
@@ -18,6 +27,17 @@ Linux 侧没有发现 M21 专用 Linux DTS、可直接用的板级驱动集合�
 | Linux Porting Difficulty | **很高**。需先解决引导、内核/DTS 和板级驱动，再做 userspace。 |
 | PocketJS Deployment Difficulty | **中高**。PJOS 已证明 PocketJS 能在另一台 ARM64 Linux 设备上启动；M21 显示/输入/图形 API 与 ABI 尚无验证。 |
 | 推荐作为 BaseOS 首个 Touch Device | **暂不推荐**。先以实机完成只读 fastboot 检查；若不能证明临时启动，再停止 M21 主线。 |
+
+**（第一轮评分，保留原文；第二轮修正如下）**
+
+| 项目 | 第一轮 | 第二轮 | 依据 |
+|---|---|---|---|
+| Device Compatibility Score | 35/100 | **62/100** | 驱动全在（226 个 .ko）、同平台已实测 custom boot；扣分项为无 M21 直接实测、音频用户态缺失 |
+| Bootloader Risk | 高 | **中** | ABL 用 QCT test key；JM21 已 `fastboot boot` 成功 |
+| BSP Risk | 很高 | **中** | stock kernel + vendor_dlkm 可用；不需 mainline |
+| Linux Porting Difficulty | 很高 | **中**（显示/输入）/ **高**（音频） | DRM + evdev MT 标准；音频需 30+ 模块与用户态自建 |
+| PocketJS Deployment Difficulty | 中高 | **中** | runtime 已含 DRM/fbdev/evdev 后端；profile 已验证通过 |
+| 推荐作为 BaseOS 首个 Touch Device | 暂不推荐 | **有条件可行**（4 条前置条件） | `docs/m21-round2/README.md` §3 |
 
 这不是对设备最终不可行的判断；它反映公开证据不足且先决条件尚未实测。
 
